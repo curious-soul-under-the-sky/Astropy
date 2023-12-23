@@ -20,7 +20,7 @@ temps = [100, 200, 2000, 4000, 8000, 10000, 30000]
 
 
 for temp in temps:
-    plt.semilogy(w_micro, plancklaw(w, temp), label = "T = " + str(temp) + " K")
+    plt.semilogy(w_micro, plancklaw(w, temp))
 
 plt.ylim(10 ** (3), 10 ** (19))
 plt.xlabel("Wavelength (micrometers)")
